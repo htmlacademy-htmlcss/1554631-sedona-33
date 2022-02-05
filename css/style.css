@@ -48,6 +48,7 @@ body {
 .navigation-counter {
 }
 .button {
+  font-family: inherit;
   color: white;
   background: #756157;
   text-transform: uppercase;
@@ -307,17 +308,17 @@ body {
 .pagination-list {
 }
 .pagination-item {
-  background: #82b3d3;
 }
 .pagination-link {
   color: #ffffff;
   text-decoration: none;
+  background: #82b3d3;
 }
 .pagination-item-active {
-  background: #82b3d3;
 }
 .pagination-link-active {
   color: #000000;
+  background: #f2f2f2;
 }
 .pagination-selectlist {
   line-height: 23px;
