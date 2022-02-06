@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: white;
+  color: black;
+}
+.navigation {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: black;
+}
+.visually-hidden {
+}
+.navigation-link-logo {
+}
+.page-header-logo {
+}
+.navigation-list {
+}
+.navigation-item {
+}
+.navigation-link {
+  color: black;
+  text-decoration: none;
+}
+.navigation-link-current {
+}
+.navigation-list-user {
+}
+.navigation-counter {
+}
+.button {
+  font-family: inherit;
+  color: white;
+  background: #756157;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+.navigation-link-button {
+  text-decoration: none;
+}
+.welcome {
+  width: 1200px;
+  height: 485px;
+  background: black url(../images/page/walcome-bacground.jpg) no-repeat;
+}
+.welcome-img {
+}
+.advantages {
+}
+.advantages-start-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages-start-subtitle {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+}
+.advantages-list {
+}
+.advantages-conteiner-item {
+}
+.advantages-item {
+  background: #f0f5f9;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+.advantages-title-white {
+  color: white;
+}
+.advantages-number {
+  text-transform: uppercase;
+}
+.advantages-photo {
+}
+.advantages-item-background-blue {
+  background: #82b3d3;
+  color: white;
+}
+.advantages-item-bacground-white {
+  background: white;
+}
+.advantages-item-photo {
+}
+.advantages-item-bacground-e6f0f6 {
+  background: #e6f0f6;
+}
+.hotel-search {
+  text-align: center;
+}
+.hotel-search-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.hotel-search-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotel-search-button {
+  font-size: 22px;
+  line-height: 26px;
+}
+.newsletter {
+  text-align: center;
+  color: #ffffff;
+  background: black url(../images/page/background-newsletter.jpg) no-repeat;
+  width: 1200px;
+  height: 400px;
+}
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.newsletter-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+.newsletter-form {
+}
+.newsletter-input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.6;
+}
+.newsletter-button {
+  font-size: 20px;
+  line-height: 26px;
+  background: #82b3d3;
+}
+.page-footer {
+}
+.footer-social {
+}
+.footer-social-list {
+}
+.footer-social-item {
+}
+.footer-social-link {
+}
+.footer-number-tel {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+.footer-logo {
+}
+.footer-logo-link {
+}
+.footer-logo-img {
+}
+
+/* Catalog */
+.main-inner {
+}
+.inner-header {
+  width: 1200px;
+  background: black url(../images/catalog/catalog-background.jpg) no-repeat;
+  color: white;
+}
+.inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+.breadcrumbs {
+  font-size: 16px;
+}
+.breadcrumbs-item {
+}
+.breadcrumbs-link {
+}
+.catalog-filter {
+}
+.filter-list {
+}
+.filter-item {
+  line-height: 23px;
+}
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+.filter-checkbox {
+}
+.filter-radio {
+}
+.filter-item-button {
+}
+.filter-button {
+  background: #82b3d3;
+}
+.filter-button-reset {
+  line-height: 23px;
+  background: none;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 400;
+}
+.catalog-hotel {
+}
+.catalog-sorting {
+}
+.sorting-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+.sorting-control {
+  font-size: 18px;
+  line-height: 23px;
+}
+.sorting-control-item {
+}
+.sorting-list {
+}
+.sorting-item {
+}
+.sotrting-button {
+}
+.sotrting-button-active {
+}
+.catalog-list-card {
+}
+.hotel-card {
+}
+.link-card {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+}
+.img-card {
+}
+.card-price-block {
+  line-height: 23px;
+}
+.signature-price {
+}
+.card-price {
+}
+.card-rating-block {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.card-button {
+  background: #82b3d3;
+}
+.card-button-active {
+  background: #7db54f;
+}
+.card-button-showmore {
+  font-size: 20px;
+  line-height: 26px;
+  background: #82b3d3;
+}
+.pagination {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+.pagination-list {
+}
+.pagination-item {
+}
+.pagination-link {
+  color: #ffffff;
+  text-decoration: none;
+  background: #82b3d3;
+}
+.pagination-item-active {
+}
+.pagination-link-active {
+  color: #000000;
+  background: #f2f2f2;
+}
+.pagination-selectlist {
+  line-height: 23px;
+}
+.pagination-select {
+  font-size: 18px;
+  line-height: 23px;
+}
+.newsletter-inner {
+  background: white;
+}
