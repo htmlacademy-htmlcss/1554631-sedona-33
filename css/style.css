@@ -21,13 +21,25 @@ body {
   background-color: white;
   color: black;
 }
+.button {
+  font-family: inherit;
+  color: white;
+  background: #756157;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+}
+.visually-hidden {
+}
+
+/* !Header */
 .navigation {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: black;
-}
-.visually-hidden {
 }
 .navigation-link-logo {
 }
@@ -47,26 +59,21 @@ body {
 }
 .navigation-counter {
 }
-.button {
-  font-family: inherit;
-  color: white;
-  background: #756157;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  font-size: 16px;
-  line-height: 21px;
-}
 .navigation-link-button {
   text-decoration: none;
 }
+
+/* !Главная страница */
+/* Приветствие */
 .welcome {
   width: 1200px;
   height: 485px;
-  background: black url(../images/page/walcome-bacground.jpg) no-repeat;
+  background: black url(../images/page/walcome-bacground.jpg) no-repeat center / cover;
 }
 .welcome-img {
 }
+
+/*  Преимущества */
 .advantages {
 }
 .advantages-start-title {
@@ -99,7 +106,7 @@ body {
   font-weight: 700;
   color: #000000;
 }
-.advantages-title-white {
+.advantages-item-background-blue .advantages-title {
   color: white;
 }
 .advantages-number {
@@ -119,6 +126,8 @@ body {
 .advantages-item-bacground-e6f0f6 {
   background: #e6f0f6;
 }
+
+/* Поиск отеля */
 .hotel-search {
   text-align: center;
 }
@@ -136,6 +145,8 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
+
+/*  Рассылка */
 .newsletter {
   text-align: center;
   color: #ffffff;
@@ -165,6 +176,8 @@ body {
   line-height: 26px;
   background: #82b3d3;
 }
+
+/*! Footer */
 .page-footer {
 }
 .footer-social {
@@ -190,12 +203,12 @@ body {
 .footer-logo-img {
 }
 
-/* Catalog */
+/*! Catalog */
 .main-inner {
 }
 .inner-header {
   width: 1200px;
-  background: black url(../images/catalog/catalog-background.jpg) no-repeat;
+  background: black url(../images/catalog/catalog-background.jpg) no-repeat center / cover;
   color: white;
 }
 .inner-title {
