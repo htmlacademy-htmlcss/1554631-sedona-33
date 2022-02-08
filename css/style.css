@@ -266,6 +266,7 @@ body {
 
 /*! Catalog */
 .main-inner {
+  flex-grow: 1;
   width: 1200px;
   margin: 0 auto;
 }
