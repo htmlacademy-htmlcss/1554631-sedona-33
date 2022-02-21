@@ -63,8 +63,7 @@ body {
 .navigation {
   background-color: white;
   display: flex;
-  margin: 0px auto;
-  width: 1060px;
+  padding: 0 5.83333%;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -141,13 +140,8 @@ body {
 .conteiner-main-index {
   flex-grow: 1;
 }
-.main-index {
-  width: 1200px;
-  margin: 0 auto;
-}
 /* Приветствие */
 .welcome {
-  width: 1200px;
   background: black url(../images/page/walcome-bacground.jpg) no-repeat center / cover;
   padding-top: 51px;
   padding-bottom: 82px;
@@ -160,11 +154,11 @@ body {
 
 /*  Преимущества */
 .advantages {
-  width: 1200px;
+  width: 100%;
 }
 
 .advantages-start-title {
-  width: 720px;
+  max-width: 60%;
   margin: 0 auto 31px;
   font-weight: 700;
   font-size: 30px;
@@ -174,7 +168,7 @@ body {
 }
 .advantages-start-subtitle {
   margin: 0 auto 80px;
-  width: 720px;
+  max-width: 60%;
   font-size: 22px;
   line-height: 36px;
   text-align: center;
@@ -182,19 +176,19 @@ body {
 }
 .advantages-list {
   list-style: none;
-  width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 .advantages-conteiner-item {
-  width: 1200px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 .advantages-sublist {
-  width: 1200px;
+  width: 100%;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -266,7 +260,6 @@ body {
 
 /* Поиск отеля */
 .hotel-search {
-  width: 1200px;
   text-align: center;
   padding: 91px 0px 93px;
 }
@@ -287,9 +280,9 @@ body {
   line-height: 36px;
   margin: 0 auto;
   text-decoration: none;
-  width: 576px;
+  width: 48%;
   height: 60px;
-  padding: 15px 150px 9px;
+  padding: 15px;
   display: block;
   box-sizing: border-box;
   border-radius: 10px;
@@ -297,7 +290,6 @@ body {
 
 /*  Рассылка */
 .newsletter {
-  width: 1200px;
   text-align: center;
   color: #ffffff;
   background: black url(../images/page/background-newsletter.jpg) no-repeat center / cover;
@@ -320,13 +312,13 @@ body {
   display: flex;
   padding: 0px;
   margin: 0 auto;
-  width: 800px;
+  width: 66.6666%;
 }
 .newsletter-input {
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
-  width: 600px;
+  width: 75%;
   height: 60px;
   padding: 0;
   margin: 0;
@@ -342,7 +334,7 @@ body {
   color: #000000;
 }
 .newsletter-button {
-  width: 200px;
+  width: 25%;
   font-size: 20px;
   line-height: 26px;
   background: #82b3d3;
@@ -361,7 +353,6 @@ body {
   box-sizing: border-box;
 }
 .footer-social {
-  margin-right: 61px;
   width: 167px;
 }
 .footer-social-list {
@@ -395,8 +386,8 @@ body {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  width: 660px;
-  margin-right: 53px;
+  max-width: 660px;
+  margin: 0 auto;
 }
 .footer-number-tel {
   color: #000000;
@@ -419,7 +410,6 @@ body {
   margin: 0 auto;
 }
 .inner-header {
-  width: 1200px;
   box-sizing: border-box;
   background: black url(../images/catalog/catalog-background.jpg) no-repeat center / cover;
   color: white;
@@ -427,7 +417,6 @@ body {
   margin: 0 0 44px;
 }
 .inner-title {
-  width: 528px;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
@@ -459,7 +448,6 @@ body {
   height: 12px;
 }
 .catalog-filter {
-  width: 1056px;
   display: flex;
   padding: 0;
   flex-wrap: wrap;
@@ -507,11 +495,10 @@ body {
   font-weight: 400;
 }
 .catalog-hotel {
-  width: 1200px;
+  padding: 0 72px;
   margin-bottom: 73px;
 }
 .catalog-sorting {
-  width: 1058px;
   margin: 0 auto 56px;
   display: flex;
   padding: 0;
@@ -543,22 +530,21 @@ body {
   margin: 0;
   margin-left: 81px;
   padding: 0;
-  width: 160px;
   list-style: none;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-.sorting-item:not(:nth-child(3n)) {
+.sorting-item:not(:last-child) {
   margin-right: 8px;
 }
 .sotrting-button {
+  display: block;
   width: 48px;
   height: 48px;
 }
 .sotrting-button-active {
 }
 .catalog-list-card {
-  width: 1056px;
   margin: 0 auto 30px;
   padding: 0 0 34px;
   display: grid;
@@ -668,7 +654,6 @@ body {
 }
 .pagination {
   display: flex;
-  width: 1056px;
   margin: 0 auto;
   font-size: 20px;
   line-height: 26px;
@@ -727,7 +712,6 @@ body {
   background: url(../images/catalog/dropdown.svg) no-repeat 127px;
 }
 .newsletter-inner {
-  width: 1200px;
   text-align: center;
   background: white;
 }
