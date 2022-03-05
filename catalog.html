@@ -11,7 +11,7 @@
 
 <body>
   <div class="wrapper">
-    <header claass="page-header">
+    <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link-logo" href="index.html">
           <img class="page-header-logo" src="images/page/logo-sedona.svg" width="139" height="70"
@@ -40,8 +40,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <svg class="navigation-link-icon" class="svg" width="19" height="17" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="navigation-link-icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.4 17a1 1 0 01-.8-.4l-7-7.9A5.4 5.4 0 016 0c1.3 0 2.5.5 3.5 1.3C10.5.5 12
                 0 13.1 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.3.2-.5.3-.9.3zm-6-9.5l6.1 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.8 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4A3.7 3.7 0 006 2.1a3.3 3.3 0 00-3.3 3.3c0 .9.3 1.6.7 2.1z" />
@@ -80,51 +79,79 @@
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <form class="catalog-filter" action="#" method="post" enctype="multipart/form-data">
-          <h3 class="visually-hidden">Фильтер каталога</h3>
-          <ul class="filter-list">
-            <li class="filter-item">
-              <h4 class="filter-title">Инфраструктура:</h4>
-            </li>
-            <li class="filter-item">
-              <label>
-                <input class="filter-checkbox" checked name="basin" value="yes" type="checkbox">Бассейн
-              </label>
-            </li>
-            <li class="filter-item">
-              <label>
-                <input class="filter-checkbox" checked name="parking" value="yes" type="checkbox">Парковка
-              </label>
-            </li>
-            <li class="filter-item">
-              <label>
-                <input class="filter-checkbox" name="Wi-Fi" value="yes" type="checkbox">Wi-Fi
-              </label>
-            </li>
-          </ul>
-          <ul class="filter-list">
-            <li class="filter-item">
-              <h4 class="filter-title">Тип жилья:</h4>
-            </li>
-            <li class="filter-item">
-              <label>
-                <input class="filter-radio" checked name="housing" value="hostel" type="radio">Гостиница
-              </label>
-            </li>
-            <li class="filter-item">
-              <label>
-                <input class="filter-radio" name="housing" value="motel" type="radio">Мотель
-              </label>
-            </li>
-            <li class="filter-item">
-              <label>
-                <input class="filter-radio" name="housing" value="apartment" type="radio">Апартаменты
-              </label>
-            </li>
-          </ul>
-          <div class="filter-range">
-            <span>#Стоймость</span>
-          </div>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" enctype="multipart/form-data">
+          <h2 class="visually-hidden">Фильтер каталога</h2>
+          <fieldset>
+            <legend class="filter-title">
+              Инфраструктура:
+            </legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <label class="filter-lable">
+                  <input class="filter-input visually-hidden" checked name="basin" value="yes" type="checkbox"><span
+                    class="filter-checkbox"></span>Бассейн
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-lable">
+                  <input class="filter-input visually-hidden" checked name="parking" value="yes" type="checkbox"><span
+                    class="filter-checkbox"></span>Парковка
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-lable">
+                  <input class="filter-input visually-hidden" name="Wi-Fi" value="yes" type="checkbox"><span
+                    class="filter-checkbox"></span>Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-title">
+              Тип жилья:
+            </legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <label class="filter-lable">
+                  <input class="filter-input visually-hidden" checked name="housing" value="hostel" type="radio"><span
+                    class="filter-radio"></span>Гостиница
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-lable">
+                  <input class="filter-input visually-hidden" name="housing" value="motel" type="radio"><span
+                    class="filter-radio"></span>Мотель
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-lable">
+                  <input class="filter-input visually-hidden" name="housing" value="apartment" type="radio"><span
+                    class="filter-radio"></span>Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-range">
+            <legend class="filter-title"> Стоимость, ₽:</legend>
+            <div class="range">
+              <div class="range-inputs">
+                <label class="range-label">
+                  <b class="visually-hidden">Изменить минимальную цену</b>
+                  <input class="range-input" name="min-price" value="0" type="number"><span>от</span>
+                </label>
+                <label class="range-label">
+                  <b class="visually-hidden">Изменить максимальную цену</b>
+                  <input class="range-input" name="max-price" value="9000" type="number"><span>до</span>
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left:10px; width: 218px;">
+                  <button class="range-toggle range-toggle-min" type="button" style="left:-10px;"></button>
+                  <button class="range-toggle range-toggle-max" type="button" style="right:-10px;"></button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
           <div class="filter-item-button">
             <button class="button filter-button" type="submit">Применить</button>
             <button class="button filter-button-reset" type="reset">Сбросить</button>
