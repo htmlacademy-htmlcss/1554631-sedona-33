@@ -1204,11 +1204,13 @@ body {
   line-height: 40px;
   margin: 0px;
   text-transform: uppercase;
+  margin-bottom: 60px;
 }
 .modal-close-icon {
   fill: inherit;
 }
 .modal-button-close {
+  margin-bottom: 60px;
   position: relative;
   top: -8px;
   width: 54px;
