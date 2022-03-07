@@ -56,6 +56,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   border: 0px;
+  padding: 0;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -1168,4 +1169,257 @@ body {
   text-align: center;
   background: white;
   margin-bottom: 140px;
+}
+
+/* Модальное окно */
+.modal-container {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+/*Класс modal-container-exit Закрывает модальное окно */
+.modal-container-exit {
+  display: #;
+}
+.modal {
+  font-family: "PT Sans", sans-serif;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 715px;
+  box-sizing: border-box;
+}
+.title-modal {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.modal-close-icon {
+  fill: inherit;
+}
+.modal-button-close {
+  position: relative;
+  top: -8px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-left: auto;
+  box-shadow: none;
+  align-self: center;
+}
+.modal-button-close:hover {
+  background-color: #e6e6e6;
+}
+.modal-button-close:active {
+  fill: #a1a1a1;
+}
+.modal-button-close:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+}
+.modal-lable {
+  margin-bottom: 40px;
+  position: relative;
+}
+.modal-lable:nth-child(1) .modal-input {
+  margin-left: 54px;
+}
+
+.modal-input {
+  width: 420px;
+  height: 50px;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin-left: 48px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 40px;
+  cursor: text;
+}
+.modal-button:hover ~ .modal-lable .modal-input {
+  background-color: #e6e6e6;
+}
+.modal-input:hover {
+  background-color: #e6e6e6;
+}
+.modal-input:focus-visible {
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+}
+.modal-input::-webkit-calendar-picker-indicator {
+  background-image: url(../images/page/date.svg);
+  cursor: pointer;
+}
+
+.modal-massage {
+  position: absolute;
+  top: 50px;
+  left: 152px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+.modal-massage-invalid {
+  color: red;
+}
+.modal-lable:nth-of-type(4) {
+}
+.modal-input-adults {
+  box-sizing: border-box;
+  padding: 0 46px;
+  width: 134px;
+  margin-left: 72px;
+  margin-right: 56px;
+  text-align: center;
+}
+.modal-input-adults::-webkit-outer-spin-button,
+.modal-input-adults::-webkit-inner-spin-button,
+.modal-input-children::-webkit-outer-spin-button,
+.modal-input-children::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.modal-input-children {
+  padding: 0 46px;
+  width: 134px;
+  margin-left: 52px;
+  text-align: center;
+}
+
+.modal-button svg {
+  fill: inherit;
+}
+.modal-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #b3b3b3ff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+}
+.modal-button:hover {
+  fill: #000000;
+}
+.modal-button:active {
+  fill: #b3b3b3ff;
+}
+.modal-button:focus-visible {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+  fill: #000000;
+}
+.modal-button-minus {
+  left: 174px;
+}
+.modal-button-plus {
+  right: 76px;
+}
+.modal-button-minus-children {
+  left: 116px;
+}
+.modal-button-plus-children {
+  right: 20px;
+}
+/* Тултип */
+.modal-tooltip {
+  position: absolute;
+  top: 0;
+  left: 54px;
+  z-index: 2;
+}
+.tooltip-button {
+  background-color: transparent;
+  transform: translateY(50%);
+  width: 25px;
+  height: 25px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.tooltip-text {
+  display: none;
+  position: relative;
+  left: -50%;
+  transform: translatex(13px);
+  box-sizing: border-box;
+  width: 256px;
+  background: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  transform: translatex(-50%);
+  top: -8px;
+  left: 50%;
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/page/triangle-tooltip.svg);
+}
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus-visible + .tooltip-text {
+  display: block;
+}
+.modal-button-submit {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  background: #83b3d3;
+  border-radius: 10px;
+  width: 575px;
+  padding: 10px 0;
+}
+.modal-button-submit:hover {
+  background-color: #68a2ca;
+}
+.modal-button-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.modal-button-submit:focus-visible {
+  outline: 3px solid #756257;
+  background-color: #68a2ca;
 }
