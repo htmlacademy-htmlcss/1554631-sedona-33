@@ -30,9 +30,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0px 0px 20px rgba(15, 15, 15, 0.2);
-  color: black;
+  color: #000000;
 }
 .visually-hidden {
   position: absolute;
@@ -48,7 +48,7 @@ body {
   display: inline-block;
   border-radius: 5px;
   font-family: inherit;
-  color: white;
+  color: #ffffff;
   background: #756157;
   text-transform: uppercase;
   font-weight: 700;
@@ -76,13 +76,13 @@ body {
 /* !Header */
 
 .navigation {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   padding: 0 5.83333%;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: black;
+  color: #000000;
 }
 .navigation-link-logo {
   position: relative;
@@ -109,7 +109,7 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 0px;
-  color: black;
+  color: #000000;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -169,7 +169,7 @@ body {
   height: 20px;
   padding-top: 4px;
   text-align: center;
-  color: aliceblue;
+  color: #f0f8ff;
   border-radius: 50%;
   top: 15px;
   right: -14px;
@@ -285,7 +285,7 @@ body {
 }
 
 .advantages-item-background-blue .advantages-title {
-  color: white;
+  color: #ffffff;
 }
 
 .advantages-photo {
@@ -294,10 +294,10 @@ body {
 }
 .advantages-item-background-blue {
   background: #82b3d3;
-  color: white;
+  color: #ffffff;
 }
 .advantages-item-bacground-white {
-  background: white;
+  background: #ffffff;
 }
 .advantages-item-photo {
 }
@@ -529,7 +529,7 @@ body {
 .inner-header {
   box-sizing: border-box;
   background: black url(../images/catalog/catalog-background.jpg) no-repeat center / cover;
-  color: white;
+  color: #ffffff;
   padding: 30px 72px 83px;
   margin: 0 0 44px;
 }
@@ -553,7 +553,7 @@ body {
   position: relative;
 }
 .breadcrumbs-link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   padding: 0 5px;
   position: relative;
@@ -785,7 +785,7 @@ body {
 .range-input[name="max-price"]:active {
   background-color: #756257;
 }
-
+/* Отключение стрелочек у input type=number */
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -988,7 +988,7 @@ body {
   height: 17px;
   background: url(../images/catalog/stars.svg) repeat;
 }
-/* Изменение кол-ва звезд в карточках */
+/* Изменение кол-ва звезд в карточках с помошью ширины */
 .hotel-card:nth-child(3) .card-star {
   width: 68px;
 }
@@ -1184,7 +1184,7 @@ body {
 }
 /*Класс modal-container-exit Закрывает модальное окно */
 .modal-container-exit {
-  display: #;
+  display: none;
 }
 .modal {
   font-family: "PT Sans", sans-serif;
@@ -1357,7 +1357,7 @@ body {
 .modal-button-plus-children {
   right: 20px;
 }
-/* Тултип */
+/* Тooltip */
 .modal-tooltip {
   position: absolute;
   top: 0;
