@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <link rel="icon" href="favicon.svg">
+  <link rel="icon" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,7 @@
                 <br>своя жизнь
               </p>
             </div>
-            <div class="advantages-photo">
+            <div class="advantages-photo-wrapper">
               <img class="advantages-photo" src="images/page/advantages1.jpg" width="800" height="384"
                 alt="Городок Седона" />
             </div>
@@ -103,7 +103,7 @@
             </ul>
           </li>
           <li class="advantages-conteiner-item">
-            <div class="advantages-item-photo">
+            <div class="advantages-photo-wrapper">
               <img class="advantages-photo" src="images/page/advantages2.jpg" width="800" height="384"
                 alt="Мост дьявола" />
             </div>
@@ -201,77 +201,81 @@
       </section>
     </footer>
   </div>
-</body>
-<!-- Модальное окно -->
-<div class="modal-container modal-container-exit">
-  <div class="modal">
-    <h2 class="title-modal">Поиск гостиницы в Седоне</h2>
-    <button class="button modal-button-close" type="button"><span class="visually-hidden">Закрыть.</span><svg
-        class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" fill="#000"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M13 1.2L11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2z" />
-      </svg></button>
-    <form class="modal-form" method="get" action="#" enctype="multipart/form-data">
-      <label class="modal-lable">
-        Дата заезда:<input class="modal-input" name="arrival-date" type="date" value="2021-04-27">
-        <span class="modal-massage modal-massage-invalid">Мы не можем отправить вас в прошлое.</span>
-      </label>
-      <label class="modal-lable">
-        Дата выезда:<input class="modal-input" name="date-departure" type="date" value="2021-09-01">
-        <span class="modal-massage modal-massage-valid ">На эти даты есть свободные номера. Пока есть.</span>
-      </label>
-      <div class="modal-lable">
-        <button class="modal-button-minus modal-button" type="button"><span class="visually-hidden">уменьшить количество
-            взрослых.</span><svg preserveAspectRatio="xMidYMid meet" width="13" height="1" viewBox="0 0 13 1"
-            fill="#000" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0v1h13V0H0z" />
-          </svg></button>
-        <button class="modal-button-plus modal-button" type="button"><span class="visually-hidden">увеличить количество
-            взрослых.</span><svg preserveAspectRatio="xMidYMid meet" width="13" height="13" viewBox="0 0 13 13"
-            fill="#000" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" />
-          </svg></button>
+  <!-- Модальное окно -->
+  <div class="modal-container modal-container-exit ">
+    <div class="modal">
+      <h2 class="title-modal">Поиск гостиницы в Седоне</h2>
+      <button class="button modal-button-close" type="button"><span class="visually-hidden">Закрыть.</span><svg
+          class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" fill="#000"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 1.2L11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2z" />
+        </svg></button>
+      <form class="modal-form" method="get" action="#" enctype="multipart/form-data">
         <label class="modal-lable">
-          Взрослые:<input class="modal-input-adults modal-input" name="number-adults" type="number" value="2">
+          Дата заезда:<input class="modal-input" name="arrival-date" type="text" placeholder="27 апреля 2020">
+          <div class="modal-calendar-picker"></div>
+          <span class="modal-massage modal-massage-invalid">Мы не можем отправить вас в прошлое.</span>
         </label>
-      </div>
-      <div class="modal-lable">
-        <!-- Тултип -->
-        <div class="modal-tooltip">
-          <span class="visually-hidden">Тултип - дети.</span>
-          <button class=" tooltip-button" type="button"><svg preserveAspectRatio="xMidYMid meet" width="25" height="25"
-              viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
-              <g clip-path="url(#clip0_33787_207)" fill="#fff">
-                <path d="M12 17h1v-6h-1v6zM13 8h-1v1h1V8z" />
-              </g>
-              <defs>
-                <clipPath id="clip0_33787_207">
-                  <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z" />
-                </clipPath>
-              </defs>
+        <label class="modal-lable">
+          Дата выезда:<input class="modal-input" name="date-departure" type="text" placeholder="1 сентября 2021">
+          <div class="modal-calendar-picker"></div>
+          <span class="modal-massage modal-massage-valid ">На эти даты есть свободные номера. Пока есть.</span>
+        </label>
+        <div class="modal-lable">
+          <button class="modal-button-minus modal-button" type="button"><span class="visually-hidden">уменьшить
+              количество
+              взрослых.</span><svg preserveAspectRatio="xMidYMid meet" width="13" height="1" viewBox="0 0 13 1"
+              fill="#000" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0v1h13V0H0z" />
             </svg></button>
-          <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
-            до 6 лет размещаются бесплатно.</p>
+          <button class="modal-button-plus modal-button" type="button"><span class="visually-hidden">увеличить
+              количество
+              взрослых.</span><svg preserveAspectRatio="xMidYMid meet" width="13" height="13" viewBox="0 0 13 13"
+              fill="#000" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" />
+            </svg></button>
+          <label class="modal-lable">
+            Взрослые:<input class="modal-input-adults modal-input" name="number-adults" type="number" value="2">
+          </label>
         </div>
-        <button class="modal-button-minus modal-button-minus-children modal-button" type="button"><span
-            class="visually-hidden">уменьшить количество детей.</span><svg preserveAspectRatio="xMidYMid meet"
-            width="13" height="1" viewBox="0 0 13 1" fill="#000" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0v1h13V0H0z" />
-          </svg></button>
-        <button class="modal-button-plus modal-button-plus-children modal-button" type="button"><span
-            class="visually-hidden">увеличить
-            количество детей.</span><svg preserveAspectRatio="xMidYMid meet" width="13" height="13" viewBox="0 0 13 13"
-            fill="#000" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" />
-          </svg></button>
-        <label class="modal-lable">
-          Дети:<input class="modal-input-children modal-input" name="number-children" type="number" value="1">
-        </label>
-      </div>
-      <button class="button modal-button-submit" type="submit">Найти</button>
-    </form>
+        <div class="modal-lable">
+          <!-- Тултип -->
+          <div class="modal-tooltip">
+            <span class="visually-hidden">Тултип - дети.</span>
+            <button class=" tooltip-button" type="button"><svg preserveAspectRatio="xMidYMid meet" width="25"
+                height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3" />
+                <g clip-path="url(#clip0_33787_207)" fill="#fff">
+                  <path d="M12 17h1v-6h-1v6zM13 8h-1v1h1V8z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_33787_207">
+                    <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z" />
+                  </clipPath>
+                </defs>
+              </svg></button>
+            <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети
+              до 6 лет размещаются бесплатно.</p>
+          </div>
+          <button class="modal-button-minus modal-button-minus-children modal-button" type="button"><span
+              class="visually-hidden">уменьшить количество детей.</span><svg preserveAspectRatio="xMidYMid meet"
+              width="13" height="1" viewBox="0 0 13 1" fill="#000" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0v1h13V0H0z" />
+            </svg></button>
+          <button class="modal-button-plus modal-button-plus-children modal-button" type="button"><span
+              class="visually-hidden">увеличить
+              количество детей.</span><svg preserveAspectRatio="xMidYMid meet" width="13" height="13"
+              viewBox="0 0 13 13" fill="#000" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" />
+            </svg></button>
+          <label class="modal-lable">
+            Дети:<input class="modal-input-children modal-input" name="number-children" type="number" value="1">
+          </label>
+        </div>
+        <button class="button modal-button-submit" type="submit">Найти</button>
+      </form>
+    </div>
   </div>
-</div>
+</body>
 
 </html>
