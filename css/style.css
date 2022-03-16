@@ -38,6 +38,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
+  word-wrap: break-word;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
@@ -126,6 +127,8 @@ body {
 }
 
 .navigation-link {
+  max-width: 120px;
+  text-align: center;
   display: block;
   padding: 20px 0;
   color: #000000;
@@ -731,18 +734,26 @@ body {
   margin: 0 67px 40px 0;
   border: none;
   padding: 0;
+  max-width: 160px;
 }
 
 .catalog-filter fieldset:nth-of-type(2) {
-  margin-right: 167px;
+  margin-right: 0;
 }
 
 .catalog-filter fieldset:nth-of-type(3) {
+  margin-left: auto;
   margin-right: 80px;
+  max-width: 288px;
 }
 
 .catalog-filter legend {
+  max-width: 160px;
   margin-bottom: 30px;
+}
+
+.filter-range legend {
+  max-width: 288px;
 }
 
 .filter-list {
@@ -775,6 +786,9 @@ body {
 .filter-lable {
   position: relative;
   padding-left: 40px;
+  max-width: 160px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .filter-checkbox {
@@ -1559,6 +1573,7 @@ body {
   position: absolute;
   top: 18px;
   right: 18px;
+  display: block;
 }
 
 .modal-input::placeholder {
